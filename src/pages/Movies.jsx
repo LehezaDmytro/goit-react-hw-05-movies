@@ -2,7 +2,7 @@ import { useSearchParams, Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { findMovie } from 'shared/Api/movies';
 
-export const Movies = () => {
+const Movies = () => {
   const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [foundMovies, setFoundMovies] = useState([]);
@@ -53,3 +53,5 @@ export const Movies = () => {
     </main>
   );
 };
+
+export default Movies;
